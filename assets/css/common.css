@@ -1,0 +1,93 @@
+.blind {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.skip-nav {
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.skip-nav a {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    background: #333;
+}
+
+.skip-nav a:focus,
+.skip-nav a:active {
+    top: 0;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.main .inner {
+    max-width: 1152px;
+    margin: 0 auto;
+    /* min-width: 1152px; */
+}
+
+.headline {
+    line-height: 1.35em;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* icon 폴더 */
+.header .group-menu .logo .link,
+.header .group-info .search-area .btn-submit,
+.sc-banner .control-wrap .btn-box button,
+.sc-news .group-title .link-all,
+.sc-cate .group-event .link-btn,
+.sc-media .group-sns .sns-area .link-all,
+.footer .group2 .info-area .inquiry {
+    background: url(../images/icon/icon_set_common.png) no-repeat;
+    background-size: 300px;
+}
+
+.sc-visual .group-slide .control-wrap button {
+    background: url(../images/icon/icon_set_common_2019.png) no-repeat;
+    background-size: 300px;
+}
+
+.sc-media .group-sns .sns-item .link {
+    background: url(../images/icon/ico_sns_list_202309.png) no-repeat center/contain;
+    background-size: cover;
+}
+
+.fixed-btn {
+    opacity: 0;
+    position: fixed;
+    left: 50%;
+    bottom: 98px;
+    transform: translateY(400%);
+    margin-left: 600px;
+    background: url(../images/icon/btn_top.png) no-repeat;
+    transition: 0.3s;
+}
+
+.fixed-btn.show {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.fixed-btn a {
+    display: block;
+    width: 34px;
+    height: 34px;
+}
